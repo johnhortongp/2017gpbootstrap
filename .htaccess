@@ -1,0 +1,23 @@
+#RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^(([A-Za-z0-9\-]+/)*[A-Za-z0-9\-]+)?$ $1.php
+
+
+RewriteEngine On    # Turn on the rewriting engine
+RewriteRule    ^2017gpbootstrap/index.html?$    	2017gpbootstrap/    [NC,L]
+RewriteRule    ^goalportfolios.com/index.html?$		2017gpbootstrap/    [NC,L]
+RewriteRule    ^om?$    				om.php    [NC,L]
+RewriteRule    ^accountsweoffer?$    	accountsweoffer.php    [NC,L]
+RewriteRule    ^blog?$    				blog.php    [NC,L]
+RewriteRule    ^about?$    				about.php    [NC,L]
+RewriteRule    ^contact?$				contact.php    [NC,L]
+RewriteRule    ^funds?$    				funds.php    [NC,L]
+RewriteRule    ^eventregistration?$		eventregistration.php    [NC,L]
+RewriteRule    ^getstarted?$    		getstarted.php    [NC,L]
+RewriteRule    ^invest?$    			invest.php    [NC,L]
+RewriteRule    ^investmentprocess?$    	investmentprocess.php    [NC,L]
+RewriteRule    ^openacct?$    			openacct.php    [NC,L]
+RewriteRule    ^ourservices?$    		ourservices.php    [NC,L]
+RewriteRule    ^questionaire?$    		questionaire.php    [NC,L]
+RewriteRule    ^underconstruction?$    	underconstruction.php    [NC,L]

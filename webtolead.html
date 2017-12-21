@@ -1,0 +1,52 @@
+<HTML>
+<HEAD><META http-equiv="Content-Type" content="text/html; charset=utf-8"><META HTTP-EQUIV="Expires" CONTENT="-1"><META HTTP-EQUIV="Pragma" CONTENT="no-cache"><META HTTP-EQUIV="Cache-Control" CONTENT="no-cache,no-Store">
+</HEAD>
+<BODY>
+<FORM Name="WEB2LEAD" method="POST" OnSubmit="return CreateAction()">
+<SCRIPT>function CreateAction()
+{if (document.WEB2LEAD.SELECTWorkFlow == null)document.WEB2LEAD.action = "https://213.207.138.9/CRM/eware.dll/SubmitLead?RuleID=";else document.WEB2LEAD.action = "https://213.207.138.9/CRM/eware.dll/SubmitLead?RuleID=" + document.WEB2LEAD.SELECTWorkFlow.options[document.WEB2LEAD.SELECTWorkFlow.selectedIndex].value;return true;
+}
+</SCRIPT>
+<TABLE CLASS=CONTENT WIDTH=100%>
+<TR>
+<TD  VALIGN=TOP ><SPAN ID=_Captlead_description class=VIEWBOXCAPTION>Description:</SPAN>
+<BR><SPAN ID=_Datalead_description class=VIEWBOX ><input type="text" CLASS=EDIT ID="lead_description" name="lead_description"  value="" maxlength=40><input type="hidden" name="_HIDDENlead_description" id="_HIDDENlead_description" value="" entryType="10"><span CLASS=VIEWBOXNOBG><font color="blue" >*</font></span></SPAN>
+</TD>
+
+</TR>
+
+<TR>
+<TD  VALIGN=TOP ><SPAN ID=_Captlead_companyname class=VIEWBOXCAPTION>Company Name:</SPAN>
+<BR><SPAN ID=_Datalead_companyname class=VIEWBOX ><input type="text" CLASS=EDIT ID="lead_companyname" name="lead_companyname"  value="" maxlength=60><input type="hidden" name="_HIDDENlead_companyname" id="_HIDDENlead_companyname" value="" entryType="10"><span CLASS=VIEWBOXNOBG><font color="blue" >*</font></span></SPAN>
+</TD>
+
+</TR>
+
+<TR>
+<TD  VALIGN=TOP ><SPAN ID=_Captlead_personlastname class=VIEWBOXCAPTION>Last name:</SPAN>
+<BR><SPAN ID=_Datalead_personlastname class=VIEWBOX ><input type="text" CLASS=EDIT ID="lead_personlastname" name="lead_personlastname"  value="" maxlength=30><input type="hidden" name="_HIDDENlead_personlastname" id="_HIDDENlead_personlastname" value="" entryType="10"><span CLASS=VIEWBOXNOBG><font color="blue" >*</font></span></SPAN>
+</TD>
+
+</TR>
+
+<TR>
+<TD  VALIGN=TOP ><SPAN ID=_Captlead_personfirstname class=VIEWBOXCAPTION>First name:</SPAN>
+<BR><SPAN ID=_Datalead_personfirstname class=VIEWBOX ><input type="text" CLASS=EDIT ID="lead_personfirstname" name="lead_personfirstname"  value="" maxlength=30><input type="hidden" name="_HIDDENlead_personfirstname" id="_HIDDENlead_personfirstname" value="" entryType="10"><span CLASS=VIEWBOXNOBG><font color="blue" >*</font></span></SPAN>
+</TD>
+
+</TR>
+
+<TR>
+<TD  VALIGN=TOP ><SPAN ID=_Captlead_personemail class=VIEWBOXCAPTION>E-mail:</SPAN>
+<BR><SPAN ID=_Datalead_personemail class=VIEWBOX ><input type="text" CLASS=EDIT ID="lead_personemail" name="lead_personemail"  value="" maxlength=255><input type="hidden" name="_HIDDENlead_personemail" id="_HIDDENlead_personemail" value="" entryType="12"><span CLASS=VIEWBOXNOBG><font color="blue" >*</font></span></SPAN>
+</TD>
+
+</TR>
+
+</TABLE>
+<input type=hidden name=_HIDDENlead_source value="Web"><input type="submit" value="Save and Submit"><input type="hidden" name="RuleID" id="RuleID" value="">
+</FORM>
+
+</BODY>
+
+</HTML>
